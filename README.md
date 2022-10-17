@@ -1,3 +1,21 @@
+# Abstract
+Due to the recent surge in security threats on software systems, software
+vulnerability detection receives a great attention in the software research
+community. The existing vulnerability detection tools mostly provide coarse-
+grained information, such as answering yes-no question on the existence of
+vulnerable program files or functions. However, indicating a file or function
+as a vulnerable has never been a quite helpful information for the software
+developers. Even after knowing a file or function is vulnerable, a developer
+needs to analyze or debug it manually to spot the exact root cause. There-
+fore, this project aims to produce a statement-level vulnerability detection
+method. In particular, this project identifies the vulnerable program state-
+ments that are prone to security attacks. For this reason, we represent each
+of the statements as a node of a graph and add heterogeneous edges by inte-
+grating syntactical, data-flow and control-flow information of a program. For
+learning and classification, we use gated graph neural network as it fits well
+with our composite graphs. Finally, we use the predication result to show
+improvement in a popular software testing tool called AFL fuzzer.
+
 # Devign
 
 Implementation of Devign Model in Python with code for processing the dataset and generation of Code Property Graphs.
